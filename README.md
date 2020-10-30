@@ -10,10 +10,10 @@
 
 <!-- ABOUT THE PROJECT -->
   Description: <br>
-  <b>df_or_csv_TOPDF.py</b> holds the python function.
-  <b>AutoFill_PDF_From_CSV.py</b> is a script formatted for creating the stand alone eel executable. 
-  <b>AutoFill_PDF_From_CSV.exe</b> is a stand alone executable gui that utilizes the python function.
-  <b>web</b> is a folder used to create the gui.
+  <br><b>df_or_csv_TOPDF.py</b> holds the python function.
+  <br><b>AutoFill_PDF_From_CSV.py</b> is a script formatted for creating the stand alone eel executable. 
+  <br><b>AutoFill_PDF_From_CSV.exe</b> is a stand alone executable gui that utilizes the python function.
+  <br><b>web</b> is a folder used to create the gui.
   
   This function will add a csv's table data into a PDF with corresponding form fields, <b>creating a PDF for each row in the CSV</b>:
   
