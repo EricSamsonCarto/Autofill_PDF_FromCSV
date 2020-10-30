@@ -15,8 +15,10 @@
   <br><b>AutoFill_PDF_From_CSV.exe</b> is a stand alone executable gui that utilizes the python function.
   <br><b>web</b> is a folder used to create the gui.
   
-  This function will add a csv's table data into a PDF as long as the fields within the csv match with the corresponding form fields within the PDF, <b>creating a PDF for each row in the CSV</b>:
-  
+  This function will add a csv's table data into a PDF as long as the fields within the csv match with the corresponding form fields within the PDF, <b>creating a PDF for each row in the CSV</b>. The below image shows an example of a csv and a simple PDF with form fields:
+
+<img src="https://lh3.googleusercontent.com/fpalauNJW2Z9GqUWYgKq4Y2r-XQ6xfujndvKiOEd230ENTFQTFePfARyPREhXHegz9BSpLXUM04VQ9ajF8uyfRv0US8XSK2rhEDrtuy9z8Omsjy-lRQJa-o7TUHHAxpSeKa3Pgra-g=w2400" width="200px">
+
 <h3>Usage</h3> 
 
 ```bash
@@ -31,7 +33,7 @@ will attached number at the end of the file for each row in the input table. <br
 <b>checkbox_fields</b>: if there are fields within your table that are for a form field checkbox within the PDF, they will need to 
 be passed to this function as a list using this argument. Otherwise, the script will not interpret the checkbox fields correctly<br>
   
-  <img src="https://lh3.googleusercontent.com/jqjeu7Me452qzRuVmN14eAg2UEpQyqU8ddkwsJX3xavJQKYqAYdabksl76aorKelR-xwbUcA9p0Y3GabXRpoFSH56QCIWqXPmfR5_1wtL-NAM4ZWQiIDFYBiFvj9aCsDKwRE-zC_QQ=w2400" width="400px">
+  
 
 
 ### Built With
