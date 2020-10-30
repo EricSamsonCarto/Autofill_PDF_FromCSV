@@ -18,7 +18,7 @@
   This function will add a csv's table data into a PDF as long as the fields within the csv match with the corresponding form fields within the PDF, <b>creating a PDF for each row in the CSV</b>. The below image shows an example of a csv and a simple PDF with form fields:
 
 <div align="center">
-<img src="https://lh3.googleusercontent.com/fpalauNJW2Z9GqUWYgKq4Y2r-XQ6xfujndvKiOEd230ENTFQTFePfARyPREhXHegz9BSpLXUM04VQ9ajF8uyfRv0US8XSK2rhEDrtuy9z8Omsjy-lRQJa-o7TUHHAxpSeKa3Pgra-g=w2400" width="400px">
+<img src="https://lh3.googleusercontent.com/fpalauNJW2Z9GqUWYgKq4Y2r-XQ6xfujndvKiOEd230ENTFQTFePfARyPREhXHegz9BSpLXUM04VQ9ajF8uyfRv0US8XSK2rhEDrtuy9z8Omsjy-lRQJa-o7TUHHAxpSeKa3Pgra-g=w2400" width="500px">
 </div>
 
 <h3>Usage</h3> 
@@ -35,12 +35,15 @@ will attached number at the end of the file for each row in the input table. <br
 <b>checkbox_fields</b>: if there are fields within your table that are for a form field checkbox within the PDF, they will need to 
 be passed to this function as a list using this argument. Otherwise, the script will not interpret the checkbox fields correctly<br>
   
-  
+You can also use the AutoFill_PDF_From_CSV.exe file as a stand alone application that will output the PDFs in the same directory as your
+template PDF:
+
 
 
 ### Built With
 * [PyPDF2](https://github.com/mstamy2/PyPDF2)
 * [Pandas](https://pandas.pydata.org/)
+* [eel](https://pandas.pydata.org/)
 
 <!-- CONTACT -->
 ## Contact
