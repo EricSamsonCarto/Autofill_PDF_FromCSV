@@ -43,7 +43,7 @@ template PDF:
 ### Built With
 * [PyPDF2](https://github.com/mstamy2/PyPDF2)
 * [Pandas](https://pandas.pydata.org/)
-* [eel](https://pandas.pydata.org/)
+* [Eel](https://github.com/samuelhwilliams/Eel)
 
 <!-- CONTACT -->
 ## Contact
