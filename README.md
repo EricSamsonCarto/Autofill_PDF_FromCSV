@@ -38,6 +38,10 @@ be passed to this function as a list using this argument. Otherwise, the script 
 You can also use the AutoFill_PDF_From_CSV.exe file as a stand alone application that will output the PDFs in the same directory as your
 template PDF:
 
+<div align="center">
+<img src="https://lh3.googleusercontent.com/eZnxZUVJ7u-t54ifK9Qn4akKR8UeKORi9OxdVhULUWAu5Wrb_efzU3N2EnpHI6Gt4TBUoiT0VKAKv4bcVVMRpKgnY_l8ZhpSD_Nh-d9qKd9mqg_eqcKFeBCsBtHfQQJ1QipsLL6deQ=w2400" width="500px">
+</div>
+
 
 
 ### Built With
