@@ -17,7 +17,7 @@
   
   This function will add a csv's table data into a PDF as long as the fields within the csv match with the corresponding form fields within the PDF, <b>creating a PDF for each row in the CSV</b>. The below image shows an example of a csv and a simple PDF with form fields:
 
-<img src="https://lh3.googleusercontent.com/fpalauNJW2Z9GqUWYgKq4Y2r-XQ6xfujndvKiOEd230ENTFQTFePfARyPREhXHegz9BSpLXUM04VQ9ajF8uyfRv0US8XSK2rhEDrtuy9z8Omsjy-lRQJa-o7TUHHAxpSeKa3Pgra-g=w2400" width="200px">
+<img src="https://lh3.googleusercontent.com/fpalauNJW2Z9GqUWYgKq4Y2r-XQ6xfujndvKiOEd230ENTFQTFePfARyPREhXHegz9BSpLXUM04VQ9ajF8uyfRv0US8XSK2rhEDrtuy9z8Omsjy-lRQJa-o7TUHHAxpSeKa3Pgra-g=w2400" width="400px" align="center">
 
 <h3>Usage</h3> 
 
