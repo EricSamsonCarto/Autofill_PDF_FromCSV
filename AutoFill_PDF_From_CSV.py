@@ -117,13 +117,3 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
     print('Completed Creating PDFs')
     
 eel.start('index.html', size={1000, 200})
-
-
-
-
-
-
-
-
-
-
