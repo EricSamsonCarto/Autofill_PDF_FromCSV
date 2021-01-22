@@ -10,10 +10,16 @@ from PyPDF2.generic import (BooleanObject, IndirectObject, NameObject,
 eel.init(r'C:\Users\eric.samson\Documents\Python\Workplaces\PyPDF2_improvements\web\web')
 
 @eel.expose
-def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default", checkbox_fields="default"):
-    #----------------------------------------------------
+def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default", output_loc='default', checkbox_fields="default"):
+    '''Function creates one PDF per row from a dataframe or from a csv. 
+       Column names must match the form field names within PDF template. See documentation for information regarding parametes'''
+
     #Create output folder location:
-    folder = Path(PDF_template).parent.absolute()
+    if output_loc != 'default':
+        folder = output_loc
+    else:
+        folder = Path(PDF_template).parent.absolute()
+
     pdf_name = os.path.basename(PDF_template).split('.')[0] + '_AUTOFILLOUTPUT'  
     outputfolder = os.path.join(folder, pdf_name)
 
