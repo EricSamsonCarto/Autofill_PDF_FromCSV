@@ -40,10 +40,11 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
     if isinstance(df_or_CSV, str):
         if '.csv' not in df_or_CSV:
             df_or_CSV = df_or_CSV + '.csv'
-            df_or_CSV = pd.read_csv(df_or_CSV)
+            df = pd.read_csv(df_or_CSV)
+    else:
+        df = df_or_CSV
     
     #send all records to dictionaries
-    df = pd.read_csv(df_or_CSV)
     dict_records = df.to_dict('records')
 
     #----------------------------------------------------
@@ -104,7 +105,7 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
             if colkey =='default':
                 value = str(colkey_counter)
             else:
-                value = dic[colkey]
+                value = str(dic[colkey])
             
             #Set up filename
             new_name = output_filename.split('.')[0] + '_' + value + '.' + output_filename.split('.')[1]
@@ -114,6 +115,5 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
             writer.write(new)
 
         f.close()
-    print('Completed Creating PDFs')
     
 eel.start('index.html', size={1000, 200})
