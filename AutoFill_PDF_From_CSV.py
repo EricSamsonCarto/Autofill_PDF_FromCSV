@@ -1,18 +1,14 @@
 import os
 import pandas as pd 
-import eel
 
 from pathlib import Path
 from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
 from PyPDF2.generic import (BooleanObject, IndirectObject, NameObject,
                             NumberObject)
 
-eel.init(r'C:\Users\eric.samson\Documents\Python\Workplaces\PyPDF2_improvements\web\web')
-
-@eel.expose
 def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default", output_loc='default', checkbox_fields="default"):
     '''Function creates one PDF per row from a dataframe or from a csv. 
-       Column names must match the form field names within PDF template. See documentation for information regarding parametes'''
+    Column names must match the form field names within PDF template'''
 
     #Create output folder location:
     if output_loc != 'default':
@@ -32,7 +28,6 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
 
     #add checkbox list to a list:
     if checkbox_fields != 'default':
-        checkbox_fields = checkbox_fields.split(",")
         checkbox_fields = [x.strip() for x in checkbox_fields]
     
     #add .pdf extensions if the user didn't include them
@@ -47,13 +42,13 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
         if '.csv' not in df_or_CSV:
             df_or_CSV = df_or_CSV + '.csv'
             df = pd.read_csv(df_or_CSV)
+        else:
+            df = pd.read_csv(df_or_CSV)
     else:
         df = df_or_CSV
     
     #send all records to dictionaries
     dict_records = df.to_dict('records')
-
-    #----------------------------------------------------
 
     #Set up set appearances function
     def set_need_appearances_writer(writer: PdfFileWriter):
@@ -112,14 +107,13 @@ def dataframe_to_PDF(df_or_CSV, PDF_template, output_filename, colkey="default",
                 value = str(colkey_counter)
             else:
                 value = str(dic[colkey])
-            
+
             #Set up filename
             new_name = output_filename.split('.')[0] + '_' + value + '.' + output_filename.split('.')[1]
+            print('Created: ' + new_name)
             out_pdf = os.path.join(outputfolder, new_name)
 
         with open(out_pdf,"wb") as new:
             writer.write(new)
 
         f.close()
-    
-eel.start('index.html', size={1000, 200})
