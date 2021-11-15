@@ -51,7 +51,7 @@ template PDF:
 
 <!-- CONTACT -->
 ## Contact
-Eric Samson: [@MyTwitter](https://twitter.com/EricSamsonGIS) <br>
+Eric Samson: [@EricSamsonGIS](https://twitter.com/EricSamsonGIS) <br>
 Email: ericsamsonwx@gmail.com <br>
 Website: [EricSamson.com](https://ericsamson.com) <br>
 
