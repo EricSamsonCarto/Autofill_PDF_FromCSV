@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PDF AutoFill</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<div class="close-and-heavy">
+<h1>PDF Form Filler</h1>
+</div>
+
+<form>
+    <input type="text" id="input_CSV" class="form-control" placeholder="Path to CSV File", onclick="getCSV()">
+    <input type="text" id="PDFtemplate" class="form-control email" placeholder="Path to PDF Template", onclick="getPDF()">
+    <input type="text" id="outputpath" class="form-control email" placeholder="Output Directory Path", onclick="getFolder()">
+    <input type="text" id="out_filename" class="form-control email" placeholder="Output PDF Filename Text">
+    Select a column from the csv to be used as an identifier in the filename.
+    <br>The column's values must be unique, otherwise the tool will overwrite:
+    <input type="text" id="colkey" class="form-control email" placeholder="OPTIONAL: Column Key">
+
+    Enter a list of fields from the CSV that are for checkboxes. 
+    <br>Seperate by comma. Example: ID, Language, Completed
+    <input type="text" id="checkbox_fields" class="form-control email" placeholder="OPTIONAL: Checkbox Fields">
+    Leave optional fields blank if they are not being used. 
+    <br>
+    <input id="showLoader" type="button" class="btn btn-complete" value="Create PDFs" onClick="CSV_PDF()">
+    <br>
+
+    <img id='Loader' src='img/spin.gif'>
+    <div id='complete'>Complete!</div>
+    <div id='error'>An error occurred. Please double check inputs and try again.</div>
+    
+</form>
+
+<h3><a href="https://ericsamson.com">Eric Samson</a><h3>
+</body>
+</html>
