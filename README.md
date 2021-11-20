@@ -25,12 +25,12 @@
 df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fields=None, output_loc=None)
 ```
 
-<b>df_or_csv<b> (dataframe or csv path): input data, must be a pandas dataframe or full path to csv file.<br>
-<b>PDF_template<b> (pdf path): PDF to fill with input data, full path to PDF file.<br>
-<b>output_filename<b> (string): string of what the output files should be named. <br>
-<b>colkey<b> (string, optional): Option to pass a unique column key to identify each file. If column values are not unique, files will be overwritten. Defaults to None and uses a number counter to differentiate files.<br>
-<b>output_loc<b> (directory path, optional): String full path to directory of output location. Defaults to None and outputs to directory of PDF_template.<br>
-<b>checkbox_fields<b> (list, optional): Option to pass a list of columns that represent checkbox form fields. Defaults to None.<br>
+<b>df_or_csv</b> (dataframe or csv path): input data, must be a pandas dataframe or full path to csv file.<br>
+<b>PDF_template</b> (pdf path): PDF to fill with input data, full path to PDF file.<br>
+<b>output_filename</b> (string): string of what the output files should be named. <br>
+<b>colkey</b> (string, optional): Option to pass a unique column key to identify each file. If column values are not unique, files will be overwritten. Defaults to None and uses a number counter to differentiate files.<br>
+<b>output_loc</b> (directory path, optional): String full path to directory of output location. Defaults to None and outputs to directory of PDF_template.<br>
+<b>checkbox_fields</b> (list, optional): Option to pass a list of columns that represent checkbox form fields. Defaults to None.<br>
   
 Over in Releases, you can download the latest version of the exe program, amde with pyinstaller:
 
