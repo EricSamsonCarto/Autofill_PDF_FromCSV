@@ -14,12 +14,20 @@
   <br><b>AutoFill_PDF_From_CSV.py</b> functions formatted for creating the eel application
   <br><b>app</b> is a folder holding the front end files used to create the gui.
  
-
 <div align="center">
 <img src="" width="450px">
 </div>
 
-<h3>Usage</h3> 
+<h3>Usage</h3>
+Running AutoFill_PDF_From_CSV.py will open up the application, the below gif illustrates how to use it:
+
+<div align="center">
+<img src="" width="400px">
+</div>
+
+For easier usage, you can download the latest version of the exe program from the Releases tab, made with pyinstaller.
+
+<h3>Within Python Usage</h3> 
 
 ```bash
 df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fields=None, output_loc=None)
@@ -31,12 +39,6 @@ df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fi
 <b>colkey</b> (string, optional): Option to pass a unique column key to identify each file. If column values are not unique, files will be overwritten. Defaults to None and uses a number counter to differentiate files.<br>
 <b>output_loc</b> (directory path, optional): String full path to directory of output location. Defaults to None and outputs to directory of PDF_template.<br>
 <b>checkbox_fields</b> (list, optional): Option to pass a list of columns that represent checkbox form fields. Defaults to None.<br>
-  
-Over in Releases, you can download the latest version of the exe program, amde with pyinstaller:
-
-<div align="center">
-<img src="" width="400px">
-</div>
 
 ### Built With
 * [PyPDF2](https://github.com/mstamy2/PyPDF2)
