@@ -17,7 +17,7 @@
   <br><b>AutoFill_PDF_From_CSV.py</b> functions formatted for creating the eel application
   <br><b>app</b> is a folder holding the front end files used to create the gui.
 
-<h3>Usage</h3>
+<h3>App Usage</h3>
 Running AutoFill_PDF_From_CSV.py will open up the application, the below gif illustrates how to use it:
 
 <div align="center">
@@ -26,7 +26,7 @@ Running AutoFill_PDF_From_CSV.py will open up the application, the below gif ill
 
 For easier usage, you can download the latest version of the exe program from the Releases tab, made with pyinstaller.
 
-<h3>Within Python Usage</h3> 
+<h3>Python Usage</h3> 
 
 ```bash
 df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fields=None, output_loc=None)
