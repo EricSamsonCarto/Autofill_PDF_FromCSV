@@ -8,10 +8,6 @@
   </p>
 </p>
 
-<div align="center">
-<img src="" width="450px">
-</div>
-
 <!-- ABOUT THE PROJECT -->
   <br><b>DataFrame_or_CSV_to_PDF.py</b> python functions
   <br><b>AutoFill_PDF_From_CSV.py</b> functions formatted for creating the eel application
