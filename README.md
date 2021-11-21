@@ -16,10 +16,9 @@
 <h3>App Usage</h3>
 Running AutoFill_PDF_From_CSV.py will open up the application, the below gif illustrates how to use it:
 
-<div align="center">
-<img src="" width="400px">
-</div>
-
+<p>
+<img src="https://github.com/EricSamsonCarto/Autofill_PDF_FromCSV/blob/master/example.gif" width="55%"/>
+</p>
 For easier usage, you can download the latest version of the exe program from the Releases tab, made with pyinstaller.
 
 <h3>Python Usage</h3> 
