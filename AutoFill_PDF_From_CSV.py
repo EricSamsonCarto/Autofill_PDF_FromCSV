@@ -17,10 +17,7 @@ def create_folder(folder_path):
 
 def check_pdf_extension(in_string):
     extension = '.pdf'
-    if extension not in in_string:
-        return in_string + '.pdf'
-    else:
-        return in_string
+    return in_string + '.pdf' if extension not in in_string else in_string
 
 def convert_csv_to_df(in_csv):
     if '.csv' in in_csv:
