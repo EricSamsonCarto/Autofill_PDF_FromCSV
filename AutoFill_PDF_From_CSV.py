@@ -79,7 +79,6 @@ def pdf_writer_from_reader(reader: PdfFileReader):
             if key in ("/AcroForm", "/Lang", "/MarkInfo")
         }
     )
-
     # Set written data appearances to be visible
     pdf_writer = set_need_appearances_writer(pdf_writer)
     if "/AcroForm" in pdf_writer._root_object:
