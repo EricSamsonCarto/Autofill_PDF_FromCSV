@@ -9,9 +9,9 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-  - <br><b>DataFrame_or_CSV_to_PDF.py</b>: python functions
-  - <br><b>AutoFill_PDF_From_CSV.py</b>: functions formatted for creating the eel application
-  - <br><b>app</b>: is a folder holding the front end files used to create the gui.
+  - <b>DataFrame_or_CSV_to_PDF.py</b>: python functions
+  - <b>AutoFill_PDF_From_CSV.py</b>: functions formatted for creating the eel application
+  - <b>app</b>: is a folder holding the front end files used to create the gui.
 
 <h3>App Usage</h3>
 Running AutoFill_PDF_From_CSV.py will open up the application, the below gif illustrates how to use it:
