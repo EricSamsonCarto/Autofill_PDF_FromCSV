@@ -4,14 +4,14 @@
 <p align="center">
   <h2 align="center">AutoFill PDF From CSV</h2>
   <p align="center">
-    A python function that auto fills a template pdf's form fields, creating one PDF per row from a csv or dataframe<br>
+    A Eel python application that auto fills a template pdf's form fields, creating one PDF per row from a csv or dataframe<br>
   </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
-  <br><b>DataFrame_or_CSV_to_PDF.py</b> python functions
-  <br><b>AutoFill_PDF_From_CSV.py</b> functions formatted for creating the eel application
-  <br><b>app</b> is a folder holding the front end files used to create the gui.
+  - <br><b>DataFrame_or_CSV_to_PDF.py</b>: python functions
+  - <br><b>AutoFill_PDF_From_CSV.py</b>: functions formatted for creating the eel application
+  - <br><b>app</b>: is a folder holding the front end files used to create the gui.
 
 <h3>App Usage</h3>
 Running AutoFill_PDF_From_CSV.py will open up the application, the below gif illustrates how to use it:
@@ -19,7 +19,7 @@ Running AutoFill_PDF_From_CSV.py will open up the application, the below gif ill
 <p>
 <img src="https://github.com/EricSamsonCarto/Autofill_PDF_FromCSV/blob/master/example.gif" width="55%"/>
 </p>
-For easier usage, you can download the latest version of the exe program from the Releases tab, made with pyinstaller.
+For easier usage, you can download the latest version of the .exe program from the Releases tab, made with pyinstaller.
 
 <h3>Python Usage</h3> 
 
