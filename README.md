@@ -4,7 +4,7 @@
 <p align="center">
   <h2 align="center">AutoFill PDF From CSV</h2>
   <p align="center">
-    A Eel python application that auto fills a template pdf's form fields, creating one PDF per row from a csv or dataframe<br>
+    An eel python application that auto fills a template pdf's form fields, creating one PDF per row of a csv or pandas dataframe<br>
   </p>
 </p>
 
