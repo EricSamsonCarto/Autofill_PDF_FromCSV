@@ -24,7 +24,9 @@ For easier usage, you can download the latest version of the exe program from th
 <h3>Python Usage</h3> 
 
 ```bash
-df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fields=None, output_loc=None)
+df_csv_to_PDF(df_or_csv, PDF_template, 
+              output_filename, colkey=None, 
+              checkbox_fields=None, output_loc=None)
 ```
 
 <b>df_or_csv</b> (dataframe or csv path): input data, must be a pandas dataframe or full path to csv file.<br>
