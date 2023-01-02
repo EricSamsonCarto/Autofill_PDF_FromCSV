@@ -4,6 +4,7 @@ import pandas as pd
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from PyPDF2.generic import BooleanObject, IndirectObject, NameObject
 
+
 def create_folder(folder_path):
     try:
         os.mkdir(folder_path)
@@ -19,6 +20,7 @@ def check_pdf_extension(in_string):
     else:
         return in_string
 
+
 def convert_csv_to_df(in_csv):
     if '.csv' in in_csv:
         return pd.read_csv(in_csv)
@@ -26,11 +28,13 @@ def convert_csv_to_df(in_csv):
     full_path_csv = f'{in_csv}.csv'
     return pd.read_csv(full_path_csv)
 
+
 def create_checkboxfields_dict(dct, fields):
     """create dictionary with only checkbox columns"""
     clean = {k:v for k,v in dct.items() if k in fields and pd.notnull(v)}
     dct = {k:v for k,v in dct.items() if k not in fields}
     return clean, dct
+
 
 def remove_undeclared_checkboxfields(pdf, dct):
     """remove btn fields that weren't declared in the checkbox_fields variable"""
@@ -38,6 +42,7 @@ def remove_undeclared_checkboxfields(pdf, dct):
     ff = reader.getFields()
     fields_to_remove = [x for x in ff if '/Btn' in ff[x].values()]
     return {k:v for k,v in dct.items() if k not in fields_to_remove}
+
 
 def set_need_appearances_writer(writer: PdfFileWriter):
     try:
@@ -53,6 +58,7 @@ def set_need_appearances_writer(writer: PdfFileWriter):
     except Exception as e:
         print('set_need_appearances_writer() catch : ', repr(e))
         return writer
+
 
 def pdf_writer_from_reader(reader: PdfFileReader):
     """
@@ -88,6 +94,7 @@ def pdf_writer_from_reader(reader: PdfFileReader):
 
     return pdf_writer
 
+
 def updateCheckboxValues(page, fields):
         for j in range(len(page['/Annots'])):
             writer_annot = page['/Annots'][j].getObject()
@@ -97,6 +104,7 @@ def updateCheckboxValues(page, fields):
                         NameObject("/V"): NameObject(fields[field]),
                         NameObject("/AS"): NameObject(fields[field])
                         })
+
 
 def df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbox_fields=None, output_loc=None):
     """Function creates one PDF per row from a dataframe or from a csv. 
@@ -147,3 +155,4 @@ def df_csv_to_PDF(df_or_csv, PDF_template, output_filename, colkey=None, checkbo
 
         with open(out_pdf,"wb") as new:
             writer.write(new)
+
